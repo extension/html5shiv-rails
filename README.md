@@ -6,7 +6,9 @@ This is a custom gem for extension projects that bundles html5shiv as a gem for 
 
 Add this line to your application's Gemfile (uses our internal gem server only, not pushed to rubygems.org)
 
-    gem 'extension-html5shiv-rails'
+    group :assets do
+      gem 'extension-html5shiv-rails', :require => 'html5shiv-rails'
+    end
 
 And then execute:
 
@@ -19,5 +21,5 @@ Or install it yourself as:
 ## Usage
 
     <!--[if lt IE 9]>
-      <%= javascript_include_tag 'html5shiv-rails' %>
+      <%= javascript_include_tag 'html5shiv' %>
     <![endif]-->
