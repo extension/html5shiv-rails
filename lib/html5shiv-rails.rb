@@ -1,4 +1,4 @@
-require "html5shiv/rails/version"
+require "html5shiv-rails/version"
 
 module Html5shiv
   module Rails
